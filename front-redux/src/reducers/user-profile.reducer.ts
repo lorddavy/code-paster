@@ -1,4 +1,4 @@
-export interface UserProfileState {
+/*export interface UserProfileState {
     firstname: string;
   }
   
@@ -9,5 +9,5 @@ export interface UserProfileState {
   export const userProfileReducer = (state = defaultUserState(), action) => {
     // Later on we will have a switch statement to replace state on changes.
     return state;
-  };
+  };*/
   

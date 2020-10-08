@@ -1,4 +1,4 @@
-import { BaseAction, actionIds } from "../common";
+/*import { BaseAction, actionIds } from "../common";
 
 export type NumberCollectionState = number[];
 
@@ -12,4 +12,4 @@ export const numberCollectionReducer = (
   }
   
   return state;
-};
+};*/

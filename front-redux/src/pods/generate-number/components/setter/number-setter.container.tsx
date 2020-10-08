@@ -1,4 +1,4 @@
-import { connect } from 'react-redux';
+/*import { connect } from 'react-redux';
 import { numberRequestStartAction } from '../../../../actions';
 import { NumberSetterComponent } from './number-setter.component';
 
@@ -9,4 +9,4 @@ const mapDispatchToProps = dispatch => ({
 export const NumberSetterContainer = connect(
   null,
   mapDispatchToProps
-)(NumberSetterComponent);
+)(NumberSetterComponent);*/

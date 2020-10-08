@@ -1,4 +1,4 @@
-import { call, put, takeEvery } from 'redux-saga/effects';
+/*import { call, put, takeEvery } from 'redux-saga/effects';
 import { generateNewNumber } from '../api';
 import { numberRequestCompletedAction } from '../actions';
 import { actionIds } from '../common';
@@ -13,4 +13,4 @@ export function* watchNewGeneratedNumberRequestStart() {
 function* requestNewGeneratedNumber() {
   const generatedNumber = yield call(generateNewNumber);
   yield put(numberRequestCompletedAction(generatedNumber));
-}
+}*/

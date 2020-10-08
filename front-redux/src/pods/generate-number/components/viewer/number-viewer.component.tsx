@@ -1,4 +1,4 @@
-import * as React from 'react';
+/*import * as React from 'react';
 
 interface Props {
   numberCollection: number[];
@@ -13,4 +13,4 @@ export const NumberViewerComponent: React.FunctionComponent<Props> = props => (
       ))}
     </ul>
   </>
-);
+);*/

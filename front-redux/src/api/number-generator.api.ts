@@ -1,4 +1,4 @@
-let initialNumber = 0;
+/*let initialNumber = 0;
 
 export const generateNewNumber = (): Promise<number> => {
   const promise = new Promise<number>(resolve => {
@@ -9,4 +9,4 @@ export const generateNewNumber = (): Promise<number> => {
   });
 
   return promise;
-};
+};*/

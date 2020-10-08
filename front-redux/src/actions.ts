@@ -1,7 +1,7 @@
 import { BaseAction, actionIds } from './common';
 import { SocketOuputMessageLiteral } from './core/const'
 
-export const numberRequestStartAction = (): BaseAction => ({
+/*export const numberRequestStartAction = (): BaseAction => ({
   type: actionIds.GET_NUMBER_REQUEST_START,
   payload: null,
 });
@@ -11,7 +11,7 @@ export const numberRequestCompletedAction = (
 ): BaseAction => ({
   type: actionIds.GET_NUMBER_REQUEST_COMPLETED,
   payload: numberGenerated,
-});
+});*/
 
 export const startSocketConnection = (room: string): BaseAction => ({
     type: actionIds.START_SOCKET_CONNECTION,
