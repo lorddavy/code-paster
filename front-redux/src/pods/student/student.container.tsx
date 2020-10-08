@@ -8,8 +8,9 @@ import {
 } from 'core';
 import { useLog } from 'core';
 import { StudentComponent } from './student.component';
-import { useDispatch } from 'react-redux';
-import { startSocketConnection } from '../../actions';
+import { useDispatch, useSelector } from 'react-redux';
+import { startSocketConnection, messageLogUpdateAction } from '../../actions';
+import { State } from '../../reducers'
 
 interface Params {
   room: string;
@@ -20,11 +21,23 @@ export const PlayerContainer = () => {
   const { log, appendToLog } = useLog();
   const [socket, setSocket] = React.useState<SocketIO.Socket>(null);
   const dispatch = useDispatch();
+  const messageLogs = useSelector((state: State) => state.MessageLogs);
 
   const handleConnection = () => {
     // Connect to socket
 
     dispatch(startSocketConnection(room));
+    /*const msg = dispatch(messageLogUpdateAction(SocketOuputMessageLiteral.MESSAGE));
+
+    if (msg.type) {
+      const { type, payload } = msg;
+
+      switch (type) {
+        case SocketReceiveMessageTypes.APPEND_TEXT:
+          appendToLog(payload);
+          break;
+      }
+    }*/
 
     /*const localSocket = createSocket({
       room: room,
@@ -54,7 +67,7 @@ export const PlayerContainer = () => {
 
   return (
     <>
-      <StudentComponent room={room} log={log} />
+      <StudentComponent room={room} log={messageLogs} />
     </>
   );
 };

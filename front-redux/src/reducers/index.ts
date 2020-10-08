@@ -1,5 +1,6 @@
 import { combineReducers } from "redux";
 import { userProfileReducer, UserProfileState } from "./user-profile.reducer";
+import { MessageLogReducer, MessageLogState } from "./message-log.reducer";
 
 import {
   numberCollectionReducer,
@@ -9,10 +10,12 @@ import {
 export interface State {
   userProfileReducer: UserProfileState;
   numberCollection: NumberCollectionState;
+  MessageLogs: MessageLogState;
 }
 
 export const reducers = combineReducers<State>({
   userProfileReducer,
   numberCollection: numberCollectionReducer,
+  MessageLogs: MessageLogReducer,
 });
 

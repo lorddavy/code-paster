@@ -35,6 +35,7 @@ export const processOuputMessage = (socketInfo: SocketInfo, action: Action) => {
       break;
     case OutputMessageTypes.APPEND_TEXT:
       handleAppendText(socketInfo, action.payload);
+      break;
     case OutputMessageTypes.REPLACE_FULL_TEXT:
       handleReplaceFullText(socketInfo, action.payload);
   }

@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import { reducers } from './reducers';
 import { store } from './store';
 
-import { NumberViewerContainer, NumberSetterContainer } from './pods/generate-number/components';
+//import { NumberViewerContainer, NumberSetterContainer } from './pods/generate-number/components';
 
 ReactDOM.render(
   <Provider store={store}>
