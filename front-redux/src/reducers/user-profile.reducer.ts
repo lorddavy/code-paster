@@ -10,3 +10,4 @@ export interface UserProfileState {
     // Later on we will have a switch statement to replace state on changes.
     return state;
   };
+  
