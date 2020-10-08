@@ -13,8 +13,7 @@ import { NumberViewerContainer, NumberSetterContainer } from './pods/generate-nu
 ReactDOM.render(
   <Provider store={store}>
     <StylesProvider injectFirst>
-      <NumberViewerContainer />
-      <NumberSetterContainer />
+      <App />
     </StylesProvider>
   </Provider>,
   document.getElementById('root')

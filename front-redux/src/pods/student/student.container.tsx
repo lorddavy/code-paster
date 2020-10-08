@@ -8,6 +8,8 @@ import {
 } from 'core';
 import { useLog } from 'core';
 import { StudentComponent } from './student.component';
+import { useDispatch } from 'react-redux';
+import { startSocketConnection } from '../../actions';
 
 interface Params {
   room: string;
@@ -17,10 +19,14 @@ export const PlayerContainer = () => {
   const { room } = useParams<Params>();
   const { log, appendToLog } = useLog();
   const [socket, setSocket] = React.useState<SocketIO.Socket>(null);
+  const dispatch = useDispatch();
 
   const handleConnection = () => {
     // Connect to socket
-    const localSocket = createSocket({
+
+    dispatch(startSocketConnection(room));
+
+    /*const localSocket = createSocket({
       room: room,
       trainertoken: '',
     });
@@ -39,7 +45,7 @@ export const PlayerContainer = () => {
             break;
         }
       }
-    });
+    });*/
   };
 
   React.useEffect(() => {

@@ -11,3 +11,8 @@ export const numberRequestCompletedAction = (
   type: actionIds.GET_NUMBER_REQUEST_COMPLETED,
   payload: numberGenerated,
 });
+
+export const startSocketConnection = (room: string): BaseAction => ({
+    type: actionIds.START_SOCKET_CONNECTION,
+    payload: room,
+  });
